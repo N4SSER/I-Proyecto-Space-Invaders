@@ -54,11 +54,11 @@ public class StateMachine {
 			if (BackM != null){
 				BackM.Stop();
 			}
-			BackG = new Audio("SpaceInvaders/Tracks/Menu.wav");
+			BackG = new Audio("Tracks/Menu.wav");
 
 		}
 		if (i == 1){
-			BackM = new Audio("SpaceInvaders/Tracks/Tank!.wav");
+			BackM = new Audio("Tracks/Tank!.wav");
 			if (BackG != null){
 				BackG.Stop();
 			}
