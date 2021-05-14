@@ -205,6 +205,14 @@ Link a nuestro proyecto en jira [SPACE INVADERS- JIRA](https://algoritms-and-dat
 12. El JPanel principal a veces no actualiza correctamente los objetos en pantalla.
 13. Cada enemigo de la hilera realiza su movimiento con un Thread diferente.
 14. Los objetos aparecen en la parte superior de la pantalla cuando ya deberían haberse eliminado.
+15. El servidor no detecta a más de un cliente.
+16. Clientes a distancia, conectados a otra red, no pueden hacer conexión con el servidor.
+17. El método de insertar de los árboles, tanto del BST y del AVL, no instancian correctamente los nodos.
+18. El valor dentro del nodo aparece como nulo a pesar de haber insertado enemigos previamente.
+19. El método para dibujar a cada enemigo del árbol en pantalla presenta errores de índice.
+20. El método para obtener un enemigo contenido en el árbol presenta excepciones de que el elemento es nulo.
+21. Los árboles no aparecen en pantalla.
+22. La clase Player extiende e implementa otras clases e interfaces respectivamente, que son necesarias para el resto del programa y no logramos colocarlo en el programa cliente.
 ```
 
 
