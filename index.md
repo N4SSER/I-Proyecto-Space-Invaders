@@ -3,6 +3,7 @@
 ## ➔DESCRIPCIÓN BREVE
 **_Versión 1.0_**: Crear un juego al estilo del clásico **Space Invaders**, un juego en el que el jugador es una nave espacial y debe de elimianr a sus oponentes los  invasores para asi ir ganando puntaje, el jugador deberá evitar que los enemigos lleguen a la parte inferior de la pantalla disparandoles y eliminandolos con su nave. 
 
+
 Para el desarrollo de este proyecto se uso el lenguaje de programacion Java, se usaron ciertos patrones de diseño para lograr llegar a los objetivos que se pidieron.
 Para la creación de los enemigos (los invasores), se tuvo que implementar el uso de listas enlazadas, en los que hay diferentes clases de enemigos, hay enemigos básicos y tambien un jefe que es más grande que los demás, estos enmigos se crean en forma de hileras y se desplazan horizontalmente, hacia abajo de la pantalla y en alguna ocasion la hilera de gira con el jefe como punto de rotación en sentido a las manecillas del reloj.
 
