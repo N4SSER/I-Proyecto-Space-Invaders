@@ -171,6 +171,7 @@ Link a nuestro proyecto en jira [SPACE INVADERS- JIRA](https://algoritms-and-dat
      en el que este no pueda subir más.
     ◆Como Usuario: quiero disparar a los enemigos con click izquierdo.
     
+    
 ◆ Kevin Gabriel Lobo: 
     
     ◆ Como Usuario: quiero que mi puntuación pueda ser muy alta.
