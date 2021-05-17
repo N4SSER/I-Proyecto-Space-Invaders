@@ -17,6 +17,8 @@ import Objects.Player;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import Objects.Mouse;
+import netSocket.GameClient;
+import netSocket.GameServer;
 
 /***
  *Class Game: Extiende a superstatemachine e implementa keylistener y mouselistener, Aqui se define todos los objetos.
@@ -31,6 +33,9 @@ public class Game extends SuperStateMachine implements KeyListener, MouseListene
 	private Mouse pointer;
 	private int setA=0;
 	public boolean playM= true;
+
+	private GameClient socketClient;
+	private GameServer socketServer;
 
 
 	/**
@@ -239,6 +244,7 @@ public class Game extends SuperStateMachine implements KeyListener, MouseListene
 		canvas.addMouseListener(player);
 		canvas.addMouseListener(this);
 		canvas.addKeyListener(this);
+		socketClient.SendData("ping".getBytes());
 	}
 
 	/**

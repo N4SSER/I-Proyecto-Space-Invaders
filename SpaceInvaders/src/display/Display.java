@@ -1,10 +1,13 @@
 package display;
 
+import netSocket.GameClient;
+import netSocket.GameServer;
+
 import java.awt.Canvas;
 import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 
 /**
@@ -20,6 +23,11 @@ public class Display extends Canvas implements Runnable {
 	private int FPS;
 	private static StateMachine state;
 	private JFrame frame;
+
+
+
+	private GameClient socketClient;
+	private GameServer socketServer;
 
 	/**
 	 *Display: Implementa el statemachine y empieza el juego.
@@ -104,6 +112,14 @@ public class Display extends Canvas implements Runnable {
 		running = true;
 		thread = new Thread(this);
 		thread.start();
+
+		if(JOptionPane.showConfirmDialog(this,"¿Quiere iniciar el servidor?") ==0){
+			socketServer = new GameServer(this);
+			socketServer.start();
+		}
+
+		socketClient = new GameClient(this,"localhost");
+		socketClient.start();
 	}
 
 	/**
