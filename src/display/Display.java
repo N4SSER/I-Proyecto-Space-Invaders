@@ -22,7 +22,7 @@ public class Display extends Canvas implements Runnable {
 	private JFrame frame;
 
 	/**
-	 *Display: Implementa el statemachine y empieza el juego.v
+	 *Display: Implementa el statemachine y empieza el juego.
 	 */
 	public Display() {
 		this.setSize(WIDTH*SCALE, HEIGHT*SCALE);
