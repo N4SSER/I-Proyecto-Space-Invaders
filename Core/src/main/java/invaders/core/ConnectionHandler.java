@@ -1,4 +1,4 @@
-package invaders.core.Connect;
+package invaders.core;
 
 public class ConnectionHandler {
 }
