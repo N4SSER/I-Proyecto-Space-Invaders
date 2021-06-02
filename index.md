@@ -20,6 +20,4 @@
 
 # Link Jira
     "   "
-
-
 ![modelo](imgs/maldito-perro.jpg)
