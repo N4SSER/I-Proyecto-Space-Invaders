@@ -25,33 +25,35 @@ public class Level implements Drawable {
 	 */
 	public InvaderLine createNewLine() {
 		Random rand = new Random();
-		int index = rand.nextInt(7);
+		int index = rand.nextInt(8);
 		int size = 7;
 		++speed;
 		if(index == 0) {
 			//Basic
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new Basic(280*3/2, -60, speed, size, this.lvl);
 		} else if(index == 1) {
 			//A
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new ClassA(280*3/2, -60, speed, size, this.lvl);
 		} else if(index == 2) {
 			//B
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new ClassB(280*3/2, -60, speed, size, this.lvl);
 		} else if(index == 3) {
 			//C
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new ClassC(280*3/2, -60, speed, size, this.lvl);
 		} else if(index == 4) {
 			//D
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new ClassD(280*3/2, -60, speed, size, this.lvl);
 		} else if(index == 5) {
 			//E
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new ClassE(280*3/2, -60, speed, size, this.lvl);
 		} else if(index == 6){
 			//AVL
 			return new ClassAVL(280*3/2,-60,speed,size,this.lvl);
-		} else {
+		} else if(index == 7){
+			return new ClassBST(280*3/2,-60,speed,size,this.lvl);
+		}else {
 			//Basic
-			return new ClassAVL(280*3/2, -60, speed, size, this.lvl);
+			return new Basic(280*3/2, -60, speed, size, this.lvl);
 		}
 	}
 

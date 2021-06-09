@@ -4,9 +4,8 @@ import DataStructures.SimplyLinkedList;
 
 import java.awt.*;
 
-public class ClassAVL extends InvaderLine implements Drawable{
-
-    public ClassAVL(int posX, int posY, int speed, int size, int lvl) {
+public class ClassBST extends InvaderLine implements Drawable{
+    public ClassBST(int posX, int posY, int speed, int size, int lvl) {
         super(posX, posY, speed, size, lvl);
         int counter = 0;
         this.setEnemies(new SimplyLinkedList<Invader>());
@@ -57,7 +56,7 @@ public class ClassAVL extends InvaderLine implements Drawable{
         }
         this.getEnemies().get(size/2).setBoss();
         this.setHaveBoss(true);
-        this.setLineClass("Class AVL");
+        this.setLineClass("Class BST");
     }
 
     @ Override
