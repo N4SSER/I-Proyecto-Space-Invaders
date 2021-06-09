@@ -31,4 +31,5 @@ public interface List<Class> {
 	 *Metodo swap: intercambia los nodos de las listas.
 **/
 	public void swap(int index1, int index2);
+
 }
