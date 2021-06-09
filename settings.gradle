@@ -1,0 +1,4 @@
+rootProject.name = 'SpaceInvadersP2'
+include 'Server'
+include 'Core'
+include 'Client'
